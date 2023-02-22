@@ -11,7 +11,7 @@ app.get("/", async (req, res) => {
   if (req.query.id) {
     const id = req.query.id;
     const resp = await axios.get(
-      `https://qe0vikexaj.execute-api.us-east-1.amazonaws.com/Prod/api/Veiculo/ObterVeiculoPublico?identificadorPublico=${id}K`
+      `https://qe0vikexaj.execute-api.us-east-1.amazonaws.com/Prod/api/Veiculo/ObterVeiculoPublico?identificadorPublico=${id}`
     );
     const veiculo = resp.data.data;
     const pokeBody = {
