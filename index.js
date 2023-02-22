@@ -15,6 +15,7 @@ app.get("/", async (req, res) => {
     const pokeBody = {
       img: pokemon.sprites.front_default,
       name: pokemon.name,
+      description: `informação sobre o pokemon ${pokemon.name}`,
     };
     res.render("pokemon", { pokemon: pokeBody });
   }
